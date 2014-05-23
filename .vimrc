@@ -1,11 +1,24 @@
+" jj exits insert mode
 :imap jj <Esc>
+
+" Shift+K breaks a line (i.e. moves text on the right of the cursor to the next line)
 :nmap K i<Enter><Esc>
-:map <MiddleMouse> <Nop> #Disabling middle mouse paste because I have a scroll-wheel mouse and middle mouse gets inadvertantly clicked when I'm scrolling
+
+" Disable middle mouse paste because I have a scroll-wheel mouse and middle mouse gets inadvertently clicked when I'm scrolling
+:map <MiddleMouse> <Nop>
 :imap <MiddleMouse> <Nop>
+
+" Space and Shift-space move half a page down and up respectively
 :nmap <Space> <C-D>
 :nmap <S-Space> <C-U>
 
+" Esc clears search highlights
+:nnoremap <silent> <Esc> :noh<CR><Esc>
+
+" Enabling pathogen
 execute pathogen#infect()
+
+
 filetype plugin indent on
 set number
 set backspace=indent,eol,start

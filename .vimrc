@@ -22,7 +22,7 @@ execute pathogen#infect()
 filetype plugin indent on
 set number
 set backspace=indent,eol,start
-set expandtab
+set tabstop=4 shiftwidth=4 expandtab
 set hlsearch
 set incsearch
 

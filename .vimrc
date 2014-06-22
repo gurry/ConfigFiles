@@ -1,5 +1,6 @@
 " jj exits insert mode
 :imap jj <Esc>
+:imap JJ <Esc>
 
 " Shift+K breaks a line (i.e. moves text on the right of the cursor to the next line)
 :nmap K i<Enter><Esc>

@@ -16,6 +16,12 @@
 " Esc clears search highlights
 :nnoremap <silent> <Esc> :noh<CR><Esc>
 
+" tab navigation like firefox
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+
 " Enabling pathogen
 execute pathogen#infect()
 

@@ -32,6 +32,8 @@ set backspace=indent,eol,start
 set tabstop=4 shiftwidth=4 expandtab
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 
 set term=xterm
 set t_Co=256

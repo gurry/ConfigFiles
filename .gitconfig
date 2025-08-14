@@ -21,7 +21,7 @@
 	lg1 = log -1 --oneline  --date=short --pretty=format:'%C(green)%h %Creset%ad%Cgreen%<(14,trunc) %aN %Creset%s'
 [user]
 	name = Gurinder Singh
-	email = gurinder.singh@1e.com
+	email = gurisingh@micros.com
 [diff]
 	tool = winmerge
 	mnemonicprefix = true
@@ -29,8 +29,6 @@
 	cmd = winmerge.sh \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
-[gui]
-	recentrepo = C:/Projects/NightWatchmanManagementCenter-git
 [log]
 	decorate = short
 [http]
@@ -53,3 +51,5 @@
 [pull]
 	ff = only
 	rebase = true
+[includeIf "gitdir:~/code/personal/"]
+    path = ~/code/personal/.gitconfig

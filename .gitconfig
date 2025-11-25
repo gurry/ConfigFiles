@@ -19,31 +19,16 @@
 	dwc = diff --color-words --cached
 	gni = grep -n -i
 	lg1 = log -1 --oneline  --date=short --pretty=format:'%C(green)%h %Creset%ad%Cgreen%<(14,trunc) %aN %Creset%s'
-[user]
-	name = Gurinder Singh
-	email = gurisingh@micros.com
-[diff]
-	tool = winmerge
-	mnemonicprefix = true
-[difftool "winmerge"]
-	cmd = winmerge.sh \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
 [log]
 	decorate = short
-[http]
 [push]
 	default = simple
-[http]
 [core]
 	autocrlf = true
 	excludesfile = 
 	preloadindex = true
 	fscache = true
 	commentchar = ";"
-[http]
-[http]
-[http]
 [http]
 	sslverify = false
 [credential]

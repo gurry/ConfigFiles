@@ -29,8 +29,6 @@
 	preloadindex = true
 	fscache = true
 	commentchar = ";"
-[http]
-	sslverify = false
 [credential]
 	helper = wincred
 [pull]
